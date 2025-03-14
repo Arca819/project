@@ -1,0 +1,30 @@
+{
+    "name": "ms-python-git",
+    "build": {
+        "dockerfile": "./Dockerfile"
+    },
+    "init": true,
+    /* 'username' と commit-mail' を必ず自分が使用するものに書き換えてください */
+    "postCreateCommand": "git config --global user.name 'username' && git config --global user.email 'commit-mail'",
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "[python]": {
+                    "editor.formatOnSave": true,
+                    "editor.codeActionsOnSave": {
+                        "source.fixAll": "explicit",
+                        "source.organizeImports": "explicit"
+                    },
+                    "editor.defaultFormatter": "charliermarsh.ruff"
+                }
+            },
+            "extensions": [
+                "ms-python.python",
+                "charliermarsh.ruff",
+                "KevinRose.vsc-python-indent",
+                "njpwerner.autodocstring",
+                "VisualStudioExptTeam.vscodeintellicode"
+            ]
+        }
+    }
+}
