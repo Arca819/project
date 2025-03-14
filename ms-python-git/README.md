@@ -6,7 +6,7 @@ Ruff で Format と Lint を行う
 
 ## Option
 
-GitHub と連携できるよう Git をインストールするし、WSL 上の .gitconfig をマウントする
+GitHub と連携できるよう Git をインストールするようにしています
 
 ## Environment
 
